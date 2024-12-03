@@ -32,7 +32,8 @@ function App() {
     };
 
     // Intervalo para verificar cada minuto
-    const intervalId = setInterval(checkDeadlines, 5000);
+    const ONE_MINUTE_IN_MILISECONDS = 60000;
+    const intervalId = setInterval(checkDeadlines, ONE_MINUTE_IN_MILISECONDS);
     console.log('effect')
 
     return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar

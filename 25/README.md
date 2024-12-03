@@ -11,7 +11,7 @@ A simple to-do list app where users can create tasks, set deadlines, and receive
 - Set deadlines and receive notifications
   - [x] Set deadlines
   - [x] Receive notifications
-- Mark tasks as completed
+- Mark tasks as **completed**
   - [x] isCompleted
 - Priority-based task sorting
 
