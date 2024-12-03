@@ -24,8 +24,8 @@ function App() {
       toDos.forEach((toDo) => {
         const deadline = new Date(toDo.deadline);
         if (deadline < now) {
-          toast.message("¡Atención!", {
-            description: `La tarea "${toDo.name}" está por vencer.`,
+          toast.message("Attention!", {
+            description: `The task “${toDo.name}” is about to expire.`,
           })
         }
       });
@@ -34,7 +34,6 @@ function App() {
     // Intervalo para verificar cada minuto
     const ONE_MINUTE_IN_MILISECONDS = 60000;
     const intervalId = setInterval(checkDeadlines, ONE_MINUTE_IN_MILISECONDS);
-    console.log('effect')
 
     return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar
   }, [toDos]);
