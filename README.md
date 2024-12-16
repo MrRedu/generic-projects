@@ -82,115 +82,115 @@
 | 78  | Inventory Management System for Small Businesses            |    🛠️     |          View Details          | 0%     |
 | 79  | Quiz Platform with Leaderboards                             |    🛠️     |          View Details          | 0%     |
 | 80  | Event Ticketing System with QR Code Verification            |    🛠️     |          View Details          | 0%     |
-|     | Blogging Platform with Social Sharing                       |    🛠️     |          View Details          | 0%     |
-|     | Collaborative Shopping List for Families                    |    🛠️     |          View Details          | 0%     |
-|     | Online Whiteboard with Collaborative Drawing                |    🛠️     |          View Details          | 0%     |
-|     | Customizable Budget Planner                                 |    🛠️     |          View Details          | 0%     |
-|     | Blogging Platform with Markdown Editor                      |    🛠️     |          View Details          | 0%     |
-|     | Real-Time Traffic Monitoring Dashboard                      |    🛠️     |          View Details          | 0%     |
-|     | Audio Book Player with Chapter Highlights                   |    🛠️     |          View Details          | 0%     |
-|     | Community Forum with User Moderation                        |    🛠️     |          View Details          | 0%     |
-|     | Expense Tracker with Budget Analysis                        |    🛠️     |          View Details          | 0%     |
-|     | AI-Based Stock Trading Assistant                            |    🛠️     |          View Details          | 0%     |
-|     | Collaborative Task Management Tool                          |    🛠️     |          View Details          | 0%     |
-|     | Personal Finance Dashboard with Forecasting                 |    🛠️     |          View Details          | 0%     |
-|     | Video Streaming Platform with Chat                          |    🛠️     |          View Details          | 0%     |
-|     | AI Resume Analyzer                                          |    🛠️     |          View Details          | 0%     |
-|     | Real-Time Chat Support Widget                               |    🛠️     |          View Details          | 0%     |
-|     | Language Learning App with Speech Recognition               |    🛠️     |          View Details          | 0%     |
-|     | Personal Finance Advisor with AI Analysis                   |    🛠️     |          View Details          | 0%     |
-|     | Virtual Study Group Platform with Video Chat                |    🛠️     |          View Details          | 0%     |
-|     | Event Management and Ticketing System                       |    🛠️     |          View Details          | 0%     |
-|     | Music Playlist Curator with API Integration                 |    🛠️     |          View Details          | 0%     |
-|     | Personal Budgeting Tool with Multi-Currency Support         |    🛠️     |          View Details          | 0%     |
-|     | Social Media Content Scheduler                              |    🛠️     |          View Details          | 0%     |
-|     | Language Translation App with History                       |    🛠️     |          View Details          | 0%     |
-|     | Collaborative Notes with Markdown Support                   |    🛠️     |          View Details          | 0%     |
-|     | Personal Recipe Generator                                   |    🛠️     |          View Details          | 0%     |
-|     | Customizable CRM for Small Businesses                       |    🛠️     |          View Details          | 0%     |
-|     | AI Chatbot with Contextual Understanding                    |    🛠️     |          View Details          | 0%     |
-|     | Personal Investment Dashboard with Market Insights          |    🛠️     |          View Details          | 0%     |
-|     | Customizable Goal Setting App                               |    🛠️     |          View Details          | 0%     |
-|     | Real-Time Collaboration Platform for Teams                  |    🛠️     |          View Details          | 0%     |
-|     | Fitness and Workout Planner                                 |    🛠️     |          View Details          | 0%     |
-|     | Personal Finance Assistant with AI                          |    🛠️     |          View Details          | 0%     |
-|     | Real Estate Listing Platform                                |    🛠️     |          View Details          | 0%     |
-|     | Book Recommendation System                                  |    🛠️     |          View Details          | 0%     |
-|     | Family Recipe Sharing App                                   |    🛠️     |          View Details          | 0%     |
-|     | Recipe Sharing Platform with Ratings                        |    🛠️     |          View Details          | 0%     |
-|     | Fitness Challenge App                                       |    🛠️     |          View Details          | 0%     |
-|     | Team Project Management with Gantt Chart                    |    🛠️     |          View Details          | 0%     |
-|     | Blogging Platform with Real-Time Commenting                 |    🛠️     |          View Details          | 0%     |
-|     | Restaurant Reservation System                               |    🛠️     |          View Details          | 0%     |
-|     | Health Data Tracker with Wearable Integration               |    🛠️     |          View Details          | 0%     |
-|     | Customer Relationship Management (CRM) Tool                 |    🛠️     |          View Details          | 0%     |
-|     | E-learning Platform with Video Courses                      |    🛠️     |          View Details          | 0%     |
-|     | Music Playlist Generator with Recommendations               |    🛠️     |          View Details          | 0%     |
-|     | Smart Home Control Dashboard                                |    🛠️     |          View Details          | 0%     |
-|     | Personal Budget Tracker with Monthly Analysis               |    🛠️     |          View Details          | 0%     |
-|     | Fitness Progress Tracker with Photo Comparisons             |    🛠️     |          View Details          | 0%     |
-|     | Recipe Box with Ingredient Shopping List                    |    🛠️     |          View Details          | 0%     |
-|     | Full-Stack Social Media Platform                            |    🔥     |          View Details          | 0%     |
-|     | AI-Powered Virtual Stylist                                  |    🔥     |          View Details          | 0%     |
-|     | Real-Time Multiplayer Game                                  |    🔥     |          View Details          | 0%     |
-|     | Job Application Tracker                                     |    🔥     |          View Details          | 0%     |
-|     | Video Conference Platform with Screen Sharing               |    🔥     |          View Details          | 0%     |
-|     | AI-Powered Resume Scanner and Job Matcher                   |    🔥     |          View Details          | 0%     |
-|     | Dynamic Data Dashboard with GraphQL                         |    🔥     |          View Details          | 0%     |
-|     | Full-Stack Video Streaming Platform                         |    🔥     |          View Details          | 0%     |
-|     | Task Management App with Kanban and Real-time Collaboration |    🔥     |          View Details          | 0%     |
-|     | Personal Document Vault with Encryption                     |    🔥     |          View Details          | 0%     |
-|     | IoT Home Automation Dashboard                               |    🔥     |          View Details          | 0%     |
-|     | AI-Driven Content Creation Platform                         |    🔥     |          View Details          | 0%     |
-|     | AI-powered Document Scanner and Analyzer                    |    🔥     |          View Details          | 0%     |
-|     | Cryptocurrency Price Tracker with Alerts                    |    🔥     |          View Details          | 0%     |
-|     | Peer-to-Peer File Sharing App                               |    🔥     |          View Details          | 0%     |
-|     | Real Estate Marketplace with Map Integration                |    🔥     |          View Details          | 0%     |
-|     | AI-Driven Social Media Sentiment Analysis                   |    🔥     |          View Details          | 0%     |
-|     | Multiplayer Quiz Game                                       |    🔥     |          View Details          | 0%     |
-|     | E-commerce Store with Augmented Reality (AR)                |    🔥     |          View Details          | 0%     |
-|     | Social Media Dashboard with Analytics                       |    🔥     |          View Details          | 0%     |
-|     | AI-Driven Sales Forecasting Platform                        |    🔥     |          View Details          | 0%     |
-|     | Supply Chain Management System with Blockchain              |    🔥     |          View Details          | 0%     |
-|     | Decentralized Marketplace on Blockchain                     | :octocat: |          View Details          | 0%     |
-|     | AI-powered Image and Video Editor                           | :octocat: |          View Details          | 0%     |
-|     | SaaS Project Management Tool                                | :octocat: |          View Details          | 0%     |
-|     | Crypto Portfolio Tracker                                    | :octocat: |          View Details          | 0%     |
-|     | Health Data Dashboard with IoT Integration                  | :octocat: |          View Details          | 0%     |
-|     | AI-powered Language Learning Platform                       | :octocat: |          View Details          | 0%     |
-|     | Real-Time Cryptocurrency Trading Simulator                  | :octocat: |          View Details          | 0%     |
-|     | Job Search Engine with Custom Filters                       | :octocat: |          View Details          | 0%     |
-|     | AI-Driven Movie Recommendation System                       | :octocat: |          View Details          | 0%     |
-|     | E-commerce Platform with AI-powered Product Recommendations | :octocat: |          View Details          | 0%     |
-|     | Real-Time Stock Market Dashboard                            | :octocat: |          View Details          | 0%     |
-|     | Virtual Reality Travel Experience                           | :octocat: |          View Details          | 0%     |
-|     | Decentralized Voting System on Blockchain                   | :octocat: |          View Details          | 0%     |
-|     | Decentralized File Storage on IPFS                          | :octocat: |          View Details          | 0%     |
-|     | Stock Trading Simulator with AI Predictions                 | :octocat: |          View Details          | 0%     |
-|     | Real-Time Sports Scoreboard                                 | :octocat: |          View Details          | 0%     |
-|     | Blockchain-based Document Authentication System             | :octocat: |          View Details          | 0%     |
-|     | Automated Job Application Tracker                           | :octocat: |          View Details          | 0%     |
-|     | NFT Marketplace with Auction Mechanism                      | :octocat: |          View Details          | 0%     |
-|     | Smart Home Automation Control Panel                         | :octocat: |          View Details          | 0%     |
-|     | Decentralized Crowdfunding Platform on Blockchain           | :octocat: |          View Details          | 0%     |
-|     | Decentralized Identity Verification System                  | :octocat: |          View Details          | 0%     |
-|     | Real-Time Stock Market Trading Simulator                    | :octocat: |          View Details          | 0%     |
-|     | AI-Powered Grammar Checker                                  | :octocat: |          View Details          | 0%     |
-|     | Blockchain-Based Document Notarization Platform             | :octocat: |          View Details          | 0%     |
-|     | Decentralized Social Media Platform                         | :octocat: |          View Details          | 0%     |
-|     | AI-Based Health Analysis Dashboard                          | :octocat: |          View Details          | 0%     |
-|     | Peer-to-Peer Cryptocurrency Exchange                        | :octocat: |          View Details          | 0%     |
-|     | AI-Powered Language Translator                              | :octocat: |          View Details          | 0%     |
-|     | Decentralized Voting App with Privacy Protocols             | :octocat: |          View Details          | 0%     |
-|     | Automated Email Marketing Platform with Analytics           | :octocat: |          View Details          | 0%     |
-|     | NFT-Based Art Gallery Platform                              | :octocat: |          View Details          | 0%     |
-|     | IoT Smart Garden Management System                          | :octocat: |          View Details          | 0%     |
-|     | Decentralized Marketplace for Digital Goods                 | :octocat: |          View Details          | 0%     |
-|     | AI-Powered Recruitment Platform                             | :octocat: |          View Details          | 0%     |
-|     | Real-Time Cryptocurrency Portfolio with AI Predictions      | :octocat: |          View Details          | 0%     |
-|     | Decentralized Lending and Borrowing Platform                | :octocat: |          View Details          | 0%     |
-|     | AI-Powered Workout Planner                                  | :octocat: |          View Details          | 0%     |
-|     | AI-Powered Document Summarizer                              | :octocat: |          View Details          | 0%     |
+| 81  | Blogging Platform with Social Sharing                       |    🛠️     |          View Details          | 0%     |
+| 82  | Collaborative Shopping List for Families                    |    🛠️     |          View Details          | 0%     |
+| 83  | Online Whiteboard with Collaborative Drawing                |    🛠️     |          View Details          | 0%     |
+| 84  | Customizable Budget Planner                                 |    🛠️     |          View Details          | 0%     |
+| 85  | Blogging Platform with Markdown Editor                      |    🛠️     |          View Details          | 0%     |
+| 86  | Real-Time Traffic Monitoring Dashboard                      |    🛠️     |          View Details          | 0%     |
+| 87  | Audio Book Player with Chapter Highlights                   |    🛠️     |          View Details          | 0%     |
+| 88  | Community Forum with User Moderation                        |    🛠️     |          View Details          | 0%     |
+| 89  | Expense Tracker with Budget Analysis                        |    🛠️     |          View Details          | 0%     |
+| 90  | AI-Based Stock Trading Assistant                            |    🛠️     |          View Details          | 0%     |
+| 91  | Collaborative Task Management Tool                          |    🛠️     |          View Details          | 0%     |
+| 92  | Personal Finance Dashboard with Forecasting                 |    🛠️     |          View Details          | 0%     |
+| 93  | Video Streaming Platform with Chat                          |    🛠️     |          View Details          | 0%     |
+| 94  | AI Resume Analyzer                                          |    🛠️     |          View Details          | 0%     |
+| 95  | Real-Time Chat Support Widget                               |    🛠️     |          View Details          | 0%     |
+| 96  | Language Learning App with Speech Recognition               |    🛠️     |          View Details          | 0%     |
+| 97  | Personal Finance Advisor with AI Analysis                   |    🛠️     |          View Details          | 0%     |
+| 98  | Virtual Study Group Platform with Video Chat                |    🛠️     |          View Details          | 0%     |
+| 99  | Event Management and Ticketing System                       |    🛠️     |          View Details          | 0%     |
+| 100 | Music Playlist Curator with API Integration                 |    🛠️     |          View Details          | 0%     |
+| 101 | Personal Budgeting Tool with Multi-Currency Support         |    🛠️     |          View Details          | 0%     |
+| 102 | Social Media Content Scheduler                              |    🛠️     |          View Details          | 0%     |
+| 103 | Language Translation App with History                       |    🛠️     |          View Details          | 0%     |
+| 104 | Collaborative Notes with Markdown Support                   |    🛠️     |          View Details          | 0%     |
+| 105 | Personal Recipe Generator                                   |    🛠️     |          View Details          | 0%     |
+| 106 | Customizable CRM for Small Businesses                       |    🛠️     |          View Details          | 0%     |
+| 107 | AI Chatbot with Contextual Understanding                    |    🛠️     |          View Details          | 0%     |
+| 108 | Personal Investment Dashboard with Market Insights          |    🛠️     |          View Details          | 0%     |
+| 109 | Customizable Goal Setting App                               |    🛠️     |          View Details          | 0%     |
+| 110 | Real-Time Collaboration Platform for Teams                  |    🛠️     |          View Details          | 0%     |
+| 111 | Fitness and Workout Planner                                 |    🛠️     |          View Details          | 0%     |
+| 112 | Personal Finance Assistant with AI                          |    🛠️     |          View Details          | 0%     |
+| 113 | Real Estate Listing Platform                                |    🛠️     |          View Details          | 0%     |
+| 114 | Book Recommendation System                                  |    🛠️     |          View Details          | 0%     |
+| 115 | Family Recipe Sharing App                                   |    🛠️     |          View Details          | 0%     |
+| 116 | Recipe Sharing Platform with Ratings                        |    🛠️     |          View Details          | 0%     |
+| 117 | Fitness Challenge App                                       |    🛠️     |          View Details          | 0%     |
+| 118 | Team Project Management with Gantt Chart                    |    🛠️     |          View Details          | 0%     |
+| 119 | Blogging Platform with Real-Time Commenting                 |    🛠️     |          View Details          | 0%     |
+| 120 | Restaurant Reservation System                               |    🛠️     |          View Details          | 0%     |
+| 121 | Health Data Tracker with Wearable Integration               |    🛠️     |          View Details          | 0%     |
+| 122 | Customer Relationship Management (CRM) Tool                 |    🛠️     |          View Details          | 0%     |
+| 123 | E-learning Platform with Video Courses                      |    🛠️     |          View Details          | 0%     |
+| 124 | Music Playlist Generator with Recommendations               |    🛠️     |          View Details          | 0%     |
+| 125 | Smart Home Control Dashboard                                |    🛠️     |          View Details          | 0%     |
+| 126 | Personal Budget Tracker with Monthly Analysis               |    🛠️     |          View Details          | 0%     |
+| 127 | Fitness Progress Tracker with Photo Comparisons             |    🛠️     |          View Details          | 0%     |
+| 128 | Recipe Box with Ingredient Shopping List                    |    🛠️     |          View Details          | 0%     |
+| 129 | Full-Stack Social Media Platform                            |    🔥     |          View Details          | 0%     |
+| 130 | AI-Powered Virtual Stylist                                  |    🔥     |          View Details          | 0%     |
+| 131 | Real-Time Multiplayer Game                                  |    🔥     |          View Details          | 0%     |
+| 132 | Job Application Tracker                                     |    🔥     |          View Details          | 0%     |
+| 133 | Video Conference Platform with Screen Sharing               |    🔥     |          View Details          | 0%     |
+| 134 | AI-Powered Resume Scanner and Job Matcher                   |    🔥     |          View Details          | 0%     |
+| 135 | Dynamic Data Dashboard with GraphQL                         |    🔥     |          View Details          | 0%     |
+| 136 | Full-Stack Video Streaming Platform                         |    🔥     |          View Details          | 0%     |
+| 137 | Task Management App with Kanban and Real-time Collaboration |    🔥     |          View Details          | 0%     |
+| 138 | Personal Document Vault with Encryption                     |    🔥     |          View Details          | 0%     |
+| 139 | IoT Home Automation Dashboard                               |    🔥     |          View Details          | 0%     |
+| 140 | AI-Driven Content Creation Platform                         |    🔥     |          View Details          | 0%     |
+| 141 | AI-powered Document Scanner and Analyzer                    |    🔥     |          View Details          | 0%     |
+| 142 | Cryptocurrency Price Tracker with Alerts                    |    🔥     |          View Details          | 0%     |
+| 143 | Peer-to-Peer File Sharing App                               |    🔥     |          View Details          | 0%     |
+| 144 | Real Estate Marketplace with Map Integration                |    🔥     |          View Details          | 0%     |
+| 145 | AI-Driven Social Media Sentiment Analysis                   |    🔥     |          View Details          | 0%     |
+| 146 | Multiplayer Quiz Game                                       |    🔥     |          View Details          | 0%     |
+| 147 | E-commerce Store with Augmented Reality (AR)                |    🔥     |          View Details          | 0%     |
+| 148 | Social Media Dashboard with Analytics                       |    🔥     |          View Details          | 0%     |
+| 149 | AI-Driven Sales Forecasting Platform                        |    🔥     |          View Details          | 0%     |
+| 150 | Supply Chain Management System with Blockchain              |    🔥     |          View Details          | 0%     |
+| 151 | Decentralized Marketplace on Blockchain                     | :octocat: |          View Details          | 0%     |
+| 152 | AI-powered Image and Video Editor                           | :octocat: |          View Details          | 0%     |
+| 153 | SaaS Project Management Tool                                | :octocat: |          View Details          | 0%     |
+| 154 | Crypto Portfolio Tracker                                    | :octocat: |          View Details          | 0%     |
+| 155 | Health Data Dashboard with IoT Integration                  | :octocat: |          View Details          | 0%     |
+| 156 | AI-powered Language Learning Platform                       | :octocat: |          View Details          | 0%     |
+| 157 | Real-Time Cryptocurrency Trading Simulator                  | :octocat: |          View Details          | 0%     |
+| 158 | Job Search Engine with Custom Filters                       | :octocat: |          View Details          | 0%     |
+| 159 | AI-Driven Movie Recommendation System                       | :octocat: |          View Details          | 0%     |
+| 160 | E-commerce Platform with AI-powered Product Recommendations | :octocat: |          View Details          | 0%     |
+| 161 | Real-Time Stock Market Dashboard                            | :octocat: |          View Details          | 0%     |
+| 162 | Virtual Reality Travel Experience                           | :octocat: |          View Details          | 0%     |
+| 163 | Decentralized Voting System on Blockchain                   | :octocat: |          View Details          | 0%     |
+| 164 | Decentralized File Storage on IPFS                          | :octocat: |          View Details          | 0%     |
+| 165 | Stock Trading Simulator with AI Predictions                 | :octocat: |          View Details          | 0%     |
+| 166 | Real-Time Sports Scoreboard                                 | :octocat: |          View Details          | 0%     |
+| 167 | Blockchain-based Document Authentication System             | :octocat: |          View Details          | 0%     |
+| 168 | Automated Job Application Tracker                           | :octocat: |          View Details          | 0%     |
+| 169 | NFT Marketplace with Auction Mechanism                      | :octocat: |          View Details          | 0%     |
+| 170 | Smart Home Automation Control Panel                         | :octocat: |          View Details          | 0%     |
+| 171 | Decentralized Crowdfunding Platform on Blockchain           | :octocat: |          View Details          | 0%     |
+| 172 | Decentralized Identity Verification System                  | :octocat: |          View Details          | 0%     |
+| 173 | Real-Time Stock Market Trading Simulator                    | :octocat: |          View Details          | 0%     |
+| 174 | AI-Powered Grammar Checker                                  | :octocat: |          View Details          | 0%     |
+| 175 | Blockchain-Based Document Notarization Platform             | :octocat: |          View Details          | 0%     |
+| 176 | Decentralized Social Media Platform                         | :octocat: |          View Details          | 0%     |
+| 177 | AI-Based Health Analysis Dashboard                          | :octocat: |          View Details          | 0%     |
+| 178 | Peer-to-Peer Cryptocurrency Exchange                        | :octocat: |          View Details          | 0%     |
+| 179 | AI-Powered Language Translator                              | :octocat: |          View Details          | 0%     |
+| 180 | Decentralized Voting App with Privacy Protocols             | :octocat: |          View Details          | 0%     |
+| 181 | Automated Email Marketing Platform with Analytics           | :octocat: |          View Details          | 0%     |
+| 182 | NFT-Based Art Gallery Platform                              | :octocat: |          View Details          | 0%     |
+| 183 | IoT Smart Garden Management System                          | :octocat: |          View Details          | 0%     |
+| 184 | Decentralized Marketplace for Digital Goods                 | :octocat: |          View Details          | 0%     |
+| 185 | AI-Powered Recruitment Platform                             | :octocat: |          View Details          | 0%     |
+| 186 | Real-Time Cryptocurrency Portfolio with AI Predictions      | :octocat: |          View Details          | 0%     |
+| 187 | Decentralized Lending and Borrowing Platform                | :octocat: |          View Details          | 0%     |
+| 188 | AI-Powered Workout Planner                                  | :octocat: |          View Details          | 0%     |
+| 189 | AI-Powered Document Summarizer                              | :octocat: |          View Details          | 0%     |
 | 190 | Decentralized Voting Platform with Audit Logs               | :octocat: |          View Details          | 0%     |
 | 191 | Blockchain-Based Voting System for Company Polls            | :octocat: |          View Details          | 0%     |
 | 192 | AI-Based SEO Content Analysis Tool                          | :octocat: |          View Details          | 0%     |
