@@ -43,7 +43,7 @@
 | 39  | Music Player with Lyrics Display Advanced                   |    🤺     |          View Details          | 0%     |
 | 40  | Personal Diary with Mood Tracker                            |    🤺     |          View Details          | 0%     |
 | 41  | Simple Chat Application with Emojis Advanced                |    🤺     |          View Details          | 0%     |
-| 42  | Countdown to Events                                         |    🤺     |          View Details          | 0%     |
+| 42  | Countdown to Events                                         |    🤺     | [View Details](./42/README.md) | 0%     |
 | 43  | Personal Nutrition Tracker Advanced                         |    🤺     |          View Details          | 0%     |
 | 44  | Notes App with Rich Text Editing Advanced                   |    🤺     |          View Details          | 0%     |
 | 45  | Simple Timer and Stopwatch Advanced                         |    🤺     |          View Details          | 0%     |
