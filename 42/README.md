@@ -18,6 +18,7 @@ Tech Stack: React, Local Storage, Tailwind CSS.
 - Notification API
 - Tailwind CSS
 - Shadcn/ui
+- ReactHookForm
 
 ### Level
 
