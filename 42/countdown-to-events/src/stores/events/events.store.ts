@@ -8,6 +8,7 @@ type State = {
 
 type Actions = {
   addEvent: (event: Event) => void;
+  editEvent: (event: Event) => void;
   removeEvent: (id: string) => void;
   resetEvents: () => void;
 };
@@ -19,6 +20,10 @@ export const useEventsStore = create<eventsStore>()(
       events: [],
       addEvent: (event) =>
         set((state) => ({ events: [...state.events, event] })),
+      editEvent: (event) =>
+        set((state) => ({
+          events: state.events.map((e) => (e.id === event.id ? event : e)),
+        })),
       removeEvent: (id) =>
         set((state) => ({
           events: state.events.filter((event) => event.id !== id),

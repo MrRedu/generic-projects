@@ -9,15 +9,21 @@ import {
 } from '@/components/ui/dialog';
 import { EventForm, type EventFormProps } from './event-form';
 
-interface EventModalProps extends EventFormProps {}
+interface EventModalProps extends EventFormProps {
+  children?: React.ReactNode;
+}
 
-export const EventModal = ({ isEditing, event }: EventModalProps) => {
+export const EventModal = ({ children, isEditing, event }: EventModalProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">
-          {isEditing ? 'Editar evento' : 'Agregar evento'}
-        </Button>
+        {children ? (
+          children
+        ) : (
+          <Button variant="outline">
+            {isEditing ? 'Editar evento' : 'Agregar evento'}
+          </Button>
+        )}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

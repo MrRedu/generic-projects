@@ -1,6 +1,7 @@
 // {
 //   id: "36b8f84d-df4e-4d49-b662-bcde71a8764f",
 //   title: "Mi boda",
+//   description: "Boda con mi pareja",
 //   targetDate: "2025-12-31T00:00:00",
 //   theme: "purple",      // Para Tailwind
 //   reminder: {           // Opcional

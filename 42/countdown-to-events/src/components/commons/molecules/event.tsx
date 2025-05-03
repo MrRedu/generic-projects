@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useEventsStore } from '@/stores/events/events.store';
+import { EventModal } from '../organisms/event-modal';
 
 interface EventProps extends EventType {}
 
@@ -53,9 +54,14 @@ export const Event = ({
         >
           <Trash2 />
         </Button>
-        <Button variant="outline" size="icon">
-          <Pencil />
-        </Button>
+        <EventModal
+          event={{ id, title, description, theme, targetDate, reminder }}
+          isEditing
+        >
+          <Button variant="outline" size="icon">
+            <Pencil />
+          </Button>
+        </EventModal>
       </CardFooter>
     </Card>
   );
