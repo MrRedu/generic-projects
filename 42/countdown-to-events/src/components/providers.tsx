@@ -1,3 +1,4 @@
+import { Toaster } from 'sonner';
 import type { ReactNode } from 'react';
 
 interface ProvidersProps {
@@ -5,5 +6,10 @@ interface ProvidersProps {
 }
 
 export const Providers = ({ children }: ProvidersProps) => {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <Toaster />
+    </>
+  );
 };
