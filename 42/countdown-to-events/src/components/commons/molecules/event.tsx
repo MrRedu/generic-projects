@@ -40,7 +40,7 @@ export const Event = ({
         <p className="font-bold">
           {`${timeLeft.days} días, ${timeLeft.hours} horas y ${timeLeft.minutes} minutos`}
         </p>
-        <p className="text-gray-600 text-sm italic">
+        <p className="text-muted-foreground text-sm italic">
           {new Date(targetDate).toLocaleDateString()}
         </p>
         {reminder && <code>{JSON.stringify(reminder, undefined, 2)}</code>}

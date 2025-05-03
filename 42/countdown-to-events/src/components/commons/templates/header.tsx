@@ -6,11 +6,7 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useEventsStore } from '@/stores/events/events.store';
@@ -87,7 +83,7 @@ export const Header = () => {
                     {/* <DropdownMenuItem>Team</DropdownMenuItem> */}
                     <DropdownMenuLabel>Apariencia</DropdownMenuLabel>
                     <ThemeToggle />
-                    <DropdownMenuSub>
+                    {/* <DropdownMenuSub>
                       <DropdownMenuSubTrigger>Color</DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
@@ -95,7 +91,7 @@ export const Header = () => {
                           <DropdownMenuItem>Rojo</DropdownMenuItem>
                         </DropdownMenuSubContent>
                       </DropdownMenuPortal>
-                    </DropdownMenuSub>
+                    </DropdownMenuSub> */}
                   </DropdownMenuGroup>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem>

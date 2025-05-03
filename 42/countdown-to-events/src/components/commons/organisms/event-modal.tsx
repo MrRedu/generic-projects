@@ -20,9 +20,7 @@ export const EventModal = ({ children, isEditing, event }: EventModalProps) => {
         {children ? (
           children
         ) : (
-          <Button variant="outline">
-            {isEditing ? 'Editar evento' : 'Agregar evento'}
-          </Button>
+          <Button>{isEditing ? 'Editar evento' : 'Agregar evento'}</Button>
         )}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
