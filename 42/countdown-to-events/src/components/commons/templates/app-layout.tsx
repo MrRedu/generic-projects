@@ -11,7 +11,7 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
     <>
       <Providers>
         <Header />
-        <main className="flex flex-col gap-4 p-8 max-w-7xl mx-auto">
+        <main className="flex flex-col gap-4 p-4 md:p-8 max-w-7xl mx-auto">
           {children}
         </main>
       </Providers>

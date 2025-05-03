@@ -22,7 +22,7 @@ export const EventsLayout = ({ children }: EventsLayoutProps) => {
 
   return (
     <>
-      <div className="flex items-center justify-end mb-4 gap-4">
+      <div className="hidden items-center justify-end mb-4 gap-4 sm:flex">
         <Label htmlFor="grid-list">List</Label>
         <Switch
           checked={layout === layoutStyle.grid}
