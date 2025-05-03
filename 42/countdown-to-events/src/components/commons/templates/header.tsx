@@ -26,6 +26,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
+import { ThemeToggle } from '../molecules/theme-toggle';
 
 export const Header = () => {
   const resetEvents = useEventsStore((state) => state.resetEvents);
@@ -84,10 +85,10 @@ export const Header = () => {
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
                     {/* <DropdownMenuItem>Team</DropdownMenuItem> */}
+                    <DropdownMenuLabel>Apariencia</DropdownMenuLabel>
+                    <ThemeToggle />
                     <DropdownMenuSub>
-                      <DropdownMenuSubTrigger>
-                        Apariencia
-                      </DropdownMenuSubTrigger>
+                      <DropdownMenuSubTrigger>Color</DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
                           <DropdownMenuItem>Azul</DropdownMenuItem>
