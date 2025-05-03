@@ -1,29 +1,12 @@
-// import { EventForm } from '@/components/commons/organisms/event-form';
 import { Events } from '@/components/commons/organisms/events';
-import { useEventsStore } from './stores/events/events.store';
-import { Button } from './components/ui/button';
-import { EventModal } from './components/commons/organisms/event-modal';
+import { EventModal } from '@/components/commons/organisms/event-modal';
+import { AppLayout } from '@/components/commons/templates/app-layout';
 
 export default function App() {
-  const resetEvents = useEventsStore((state) => state.resetEvents);
-
   return (
-    <main className="flex flex-col gap-4 p-8">
+    <AppLayout>
       <EventModal isEditing={false} />
       <Events />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Button onClick={resetEvents} variant="destructive">
-        Reset events
-      </Button>
-    </main>
+    </AppLayout>
   );
 }

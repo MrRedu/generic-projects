@@ -18,6 +18,15 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useEventsStore } from '@/stores/events/events.store';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { EVENTS_TYPE } from '@/constants/constants';
+import { capitalize } from '@/lib/utils';
 
 export interface EventFormProps {
   isEditing: boolean;
@@ -64,7 +73,24 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
             <FormItem>
               <FormLabel>Título</FormLabel>
               <FormControl>
-                <Input placeholder="Mi cumpleaños" {...field} />
+                <Input placeholder="Mi cumpleaños" maxLength={16} {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="description"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Descripción</FormLabel>
+              <FormControl>
+                <Input
+                  // placeholder=""
+                  maxLength={32}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -77,7 +103,13 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
             <FormItem>
               <FormLabel>Fecha</FormLabel>
               <FormControl>
-                <Input type="date" placeholder="Fecha" {...field} />
+                {/* Hacer esto con hora también */}
+                <Input
+                  type="date"
+                  placeholder="Fecha"
+                  min={new Date().toISOString().split('T')[0]}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -89,16 +121,31 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Tema</FormLabel>
-              <FormControl>
-                <Input placeholder="Tema" {...field} />
-              </FormControl>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger className="w-full">
+                    <SelectValue
+                    // placeholder="Select a verified email to display"
+                    />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  {Object.entries(EVENTS_TYPE).map(([key, value]) => (
+                    <SelectItem key={key} value={key}>
+                      {capitalize(value)}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">
-          {isEditing ? 'Editar evento' : 'Agregar evento'}
-        </Button>
+        <div className="flex items-center justify-end gap-4 mt-8">
+          <Button type="submit">
+            {isEditing ? 'Editar evento' : 'Agregar evento'}
+          </Button>
+        </div>
       </form>
     </Form>
   );

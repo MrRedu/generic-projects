@@ -34,7 +34,9 @@ export const EventsLayout = ({ children }: EventsLayoutProps) => {
       <section
         className={cn(
           'gap-4',
-          layout === layoutStyle.grid ? 'grid grid-cols-3' : 'flex flex-col'
+          layout === layoutStyle.grid
+            ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 '
+            : 'flex flex-col'
         )}
       >
         {children}
