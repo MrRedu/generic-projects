@@ -32,7 +32,7 @@ export const Header = () => {
       <header>
         <div className="flex items-center justify-between px-4 py-2  border-b  max-w-7xl mx-auto">
           <h1 className="text-2xl font-bold sr-only">CountdownApp</h1>
-          <img src="../../../assets/icon.svg" alt="Logo" className="w-8 h-8" />
+          <img src="/icon.svg" alt="Logo" className="w-8 h-8" />
           <div className="flex items-center gap-1">
             <Button size="icon" variant="ghost">
               <Bell />
