@@ -14,6 +14,17 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { useEventsStore } from '@/stores/events/events.store';
 import { EventModal } from '../organisms/event-modal';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  AlertDialogCancel,
+} from '@/components/ui/alert-dialog';
 
 interface EventProps extends EventType {}
 
@@ -46,14 +57,33 @@ export const Event = ({
         {reminder && <code>{JSON.stringify(reminder, undefined, 2)}</code>}
       </CardContent>
       <CardFooter className="flex items-center justify-end gap-2 mt-auto">
-        <Button
-          variant="outline"
-          size="icon"
-          className="hover:text-red-600"
-          onClick={() => removeEvent(id)}
-        >
-          <Trash2 />
-        </Button>
+        <AlertDialog>
+          <AlertDialogTrigger asChild>
+            <Button
+              variant="outline"
+              size="icon"
+              className="hover:text-red-600"
+            >
+              <Trash2 />
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>¿Está completamente seguro?</AlertDialogTitle>
+              <AlertDialogDescription>
+                Esta acción no se puede deshacer. Esto eliminará permanentemente
+                su evento.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancelar</AlertDialogCancel>
+              <AlertDialogAction onClick={() => removeEvent(id)}>
+                Eliminar
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+
         <EventModal
           event={{ id, title, description, theme, targetDate, reminder }}
           isEditing
