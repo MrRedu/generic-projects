@@ -2,7 +2,15 @@ import { z } from 'zod';
 
 export const eventFormSchema = z.object({
   id: z.string().uuid(),
-  title: z.string().min(1, { message: 'El título es requerido' }),
+  title: z.string().min(1, { message: 'El título es requerido' }).max(16, {
+    message: 'El título no puede tener más de 16 caracteres',
+  }),
+  description: z
+    .string()
+    .max(32, {
+      message: 'La descripción no puede tener más de 32 caracteres',
+    })
+    .optional(),
   targetDate: z
     .string()
     .refine((date) => !isNaN(Date.parse(date)), {

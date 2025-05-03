@@ -12,6 +12,7 @@
 export type Event = {
   id: string;
   title: string;
+  description?: string;
   targetDate: string;
   theme: string;
   reminder?: {
