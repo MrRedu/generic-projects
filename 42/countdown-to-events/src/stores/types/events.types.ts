@@ -14,10 +14,13 @@ export type Event = {
   id: string;
   title: string;
   description?: string;
-  targetDate: string;
+  targetDate: Date;
   theme: string;
   reminder?: {
     daysBefore: number;
     notify: boolean;
   };
 };
+
+export type FormatHours = '12h' | '24h';
+export type WeekStartsOn = 'monday' | 'sunday';

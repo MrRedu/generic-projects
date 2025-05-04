@@ -23,6 +23,8 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { ThemeToggle } from '../molecules/theme-toggle';
+import { SwitchFormatHours } from '../molecules/switch-format-hours';
+import { SwitchWeekStartsOn } from '../molecules/switch-week-starts-on';
 
 export const Header = () => {
   const resetEvents = useEventsStore((state) => state.resetEvents);
@@ -45,12 +47,11 @@ export const Header = () => {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
-                  <DropdownMenuLabel>Preferencias</DropdownMenuLabel>
+                  <DropdownMenuLabel>Configuraciones</DropdownMenuLabel>
                   <DropdownMenuSeparator />
 
                   <DropdownMenuItem disabled>Perfil</DropdownMenuItem>
 
-                  {/* <AlertDialogPortal> */}
                   <AlertDialogTrigger asChild>
                     <Button
                       className="w-full justify-start p-2 font-normal"
@@ -77,13 +78,14 @@ export const Header = () => {
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
-                  {/* </AlertDialogPortal> */}
-
                   <DropdownMenuSeparator />
+                  {/* Appearance options 🔽 */}
                   <DropdownMenuGroup>
                     {/* <DropdownMenuItem>Team</DropdownMenuItem> */}
                     <DropdownMenuLabel>Apariencia</DropdownMenuLabel>
                     <ThemeToggle />
+                    <SwitchWeekStartsOn />
+                    <SwitchFormatHours />
                     {/* <DropdownMenuSub>
                       <DropdownMenuSubTrigger>Color</DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
@@ -94,25 +96,24 @@ export const Header = () => {
                       </DropdownMenuPortal>
                     </DropdownMenuSub> */}
                   </DropdownMenuGroup>
+                  {/* Appearance options 🔼 */}
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <a
-                      href="https://github.com/MrRedu/generic-projects/tree/main/42"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Source code"
-                      className="flex items-center gap-2"
-                    >
-                      GitHub
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem disabled>Support</DropdownMenuItem>
-                  {/* <DropdownMenuItem disabled>API</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                Log out
-                <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-              </DropdownMenuItem> */}
+                  {/* Last options 🔽 */}
+                  <DropdownMenuGroup>
+                    <DropdownMenuItem>
+                      <a
+                        href="https://github.com/MrRedu/generic-projects/tree/main/42"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Source code"
+                        className="flex items-center gap-2"
+                      >
+                        GitHub
+                      </a>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem disabled>Support</DropdownMenuItem>
+                  </DropdownMenuGroup>
+                  {/* Last options 🔼 */}
                 </DropdownMenuContent>
               </DropdownMenu>
             </AlertDialog>
