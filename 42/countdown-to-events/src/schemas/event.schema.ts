@@ -11,12 +11,7 @@ export const eventFormSchema = z.object({
       message: 'La descripción no puede tener más de 32 caracteres',
     })
     .optional(),
-  targetDate: z
-    .string()
-    .refine((date) => !isNaN(Date.parse(date)), {
-      message: 'Formato de fecha inválido',
-    })
-    .transform((date) => new Date(date).toISOString()),
+  targetDate: z.date({ required_error: 'La fecha es requerida' }),
   theme: z.string().min(1, { message: 'El tema es requerido' }),
   reminder: z
     .object({

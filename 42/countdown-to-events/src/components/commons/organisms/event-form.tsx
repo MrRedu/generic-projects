@@ -26,9 +26,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { EVENTS_TYPE } from '@/constants/constants';
-import { capitalize } from '@/lib/utils';
+import { capitalize, cn } from '@/lib/utils';
 import { toast } from 'sonner';
 import { BadgeCheck } from 'lucide-react';
+import { DateTimePicker } from '@/components/commons/organisms/datetime-picker';
+import { usePreferencesStore } from '@/stores/events/preferences.store';
+import { es } from 'date-fns/locale';
 
 export interface EventFormProps {
   isEditing: boolean;
@@ -38,16 +41,18 @@ export interface EventFormProps {
 export const EventForm = ({ isEditing, event }: EventFormProps) => {
   const addEvent = useEventsStore((state) => state.addEvent);
   const editEvent = useEventsStore((state) => state.editEvent);
+  const formatHours = usePreferencesStore((state) => state.formatHours);
+  const weekStartsOn = usePreferencesStore((state) => state.weekStartsOn);
 
   const form = useForm<z.infer<typeof eventFormSchema>>({
     resolver: zodResolver(eventFormSchema),
     defaultValues: isEditing
-      ? { ...event, targetDate: event?.targetDate.split('T')[0] }
+      ? { ...event }
       : {
           id: crypto.randomUUID(),
           title: '',
           description: '',
-          targetDate: '',
+          targetDate: undefined,
           theme: '',
         },
   });
@@ -64,35 +69,18 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
     }
     // Si no, agregas a la lista
     addEvent(values);
+    toast.message(`Evento «${values.title}» agregado correctamente`, {
+      icon: <BadgeCheck size={20} />,
+      description: 'El evento se ha agregado a la lista.',
+    });
+    // Reinicia el formulario
     form.reset({
       id: crypto.randomUUID(),
       title: '',
       description: '',
-      targetDate: '',
       theme: '',
     });
   }
-
-  //* Lógica para deshabilitar el botón en el caso de querer editar y no cambiar nada
-  const currentValues = form.watch();
-
-  // Normaliza los valores para la comparación
-  const normalizedCurrentValues = {
-    ...currentValues,
-    targetDate: currentValues.targetDate?.split('T')[0] ?? '',
-  };
-  const normalizedEvent = event
-    ? {
-        ...event,
-        targetDate: event.targetDate?.split('T')[0] ?? '',
-      }
-    : null;
-
-  // Compara los objetos
-  const isUnchanged =
-    isEditing &&
-    normalizedEvent &&
-    JSON.stringify(normalizedCurrentValues) === JSON.stringify(normalizedEvent);
 
   return (
     <Form {...form}>
@@ -104,7 +92,7 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
             <FormItem>
               <FormLabel>Título</FormLabel>
               <FormControl>
-                <Input placeholder="Mi cumpleaños" maxLength={16} {...field} />
+                <Input placeholder="Año nuevo" maxLength={16} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -118,7 +106,7 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
               <FormLabel>Descripción</FormLabel>
               <FormControl>
                 <Input
-                  // placeholder=""
+                  placeholder="Prepararse para celebrar"
                   maxLength={32}
                   {...field}
                 />
@@ -132,14 +120,19 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
           name="targetDate"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Fecha</FormLabel>
+              <FormLabel>Fecha y hora</FormLabel>
               <FormControl>
-                {/* Hacer esto con hora también */}
-                <Input
-                  type="date"
-                  placeholder="Fecha"
-                  min={new Date().toISOString().split('T')[0]}
-                  {...field}
+                <DateTimePicker
+                  placeholder="Marca el día de tu evento"
+                  value={field.value}
+                  onChange={field.onChange}
+                  hourCycle={formatHours === '24h' ? 24 : 12}
+                  weekStartsOn={weekStartsOn === 'monday' ? 1 : 0}
+                  locale={es}
+                  yearRange={10}
+                  className={cn(
+                    form.formState.errors.targetDate ? 'border-red-500' : ''
+                  )}
                 />
               </FormControl>
               <FormMessage />
@@ -155,9 +148,7 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="w-full">
-                    <SelectValue
-                    // placeholder="Select a verified email to display"
-                    />
+                    <SelectValue placeholder="¿Qué tema define tu evento?" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -173,7 +164,7 @@ export const EventForm = ({ isEditing, event }: EventFormProps) => {
           )}
         />
         <div className="flex items-center justify-end gap-4 mt-8">
-          <Button type="submit" disabled={!!isUnchanged}>
+          <Button type="submit">
             {isEditing ? 'Editar evento' : 'Agregar evento'}
           </Button>
         </div>
