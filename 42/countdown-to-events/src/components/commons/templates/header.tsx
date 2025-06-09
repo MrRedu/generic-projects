@@ -25,8 +25,20 @@ import {
 import { ThemeToggle } from '../molecules/theme-toggle';
 import { SwitchFormatHours } from '../molecules/switch-format-hours';
 import { SwitchWeekStartsOn } from '../molecules/switch-week-starts-on';
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { AuthContext } from '@/context/auth/auth';
+import { useContext } from 'react';
 
 export const Header = () => {
+  const { user } = useContext(AuthContext);
   const resetEvents = useEventsStore((state) => state.resetEvents);
 
   return (
@@ -39,19 +51,56 @@ export const Header = () => {
             <Button size="icon" variant="ghost">
               <Bell />
             </Button>
-            <AlertDialog>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button size="iconSm" variant="ghost">
-                    <Settings />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <DropdownMenuLabel>Configuraciones</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button size="iconSm" variant="ghost">
+                  <Settings />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuLabel>Configuraciones</DropdownMenuLabel>
+                <DropdownMenuSeparator />
 
-                  <DropdownMenuItem disabled>Perfil</DropdownMenuItem>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      className="w-full justify-start p-2 font-normal"
+                      size="sm"
+                      variant="ghost"
+                      disabled={!user}
+                    >
+                      Perfil
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Perfil</DialogTitle>
+                    </DialogHeader>
+                    <div className="flex items-center justify-center flex-col gap-2">
+                      <Avatar className="w-24 h-24">
+                        <AvatarImage
+                          src={user?.avatar || '/default-avatar.png'}
+                          alt={
+                            (user && `${user.name} avatar`) || 'Default avatar'
+                          }
+                        />
+                        <AvatarFallback>
+                          {user?.name.charAt(0) || 'N'}
+                        </AvatarFallback>
+                      </Avatar>
+                      <h3>{user?.name}</h3>
+                      <p>{user?.email}</p>
+                    </div>
 
+                    <DialogFooter>
+                      <Button onClick={() => console.log('Acción')}>
+                        Acción
+                      </Button>
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
+
+                <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <Button
                       className="w-full justify-start p-2 font-normal"
@@ -78,15 +127,17 @@ export const Header = () => {
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
-                  <DropdownMenuSeparator />
-                  {/* Appearance options 🔽 */}
-                  <DropdownMenuGroup>
-                    {/* <DropdownMenuItem>Team</DropdownMenuItem> */}
-                    <DropdownMenuLabel>Apariencia</DropdownMenuLabel>
-                    <ThemeToggle />
-                    <SwitchWeekStartsOn />
-                    <SwitchFormatHours />
-                    {/* <DropdownMenuSub>
+                </AlertDialog>
+
+                <DropdownMenuSeparator />
+                {/* Appearance options 🔽 */}
+                <DropdownMenuGroup>
+                  {/* <DropdownMenuItem>Team</DropdownMenuItem> */}
+                  <DropdownMenuLabel>Apariencia</DropdownMenuLabel>
+                  <ThemeToggle />
+                  <SwitchWeekStartsOn />
+                  <SwitchFormatHours />
+                  {/* <DropdownMenuSub>
                       <DropdownMenuSubTrigger>Color</DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
@@ -95,28 +146,27 @@ export const Header = () => {
                         </DropdownMenuSubContent>
                       </DropdownMenuPortal>
                     </DropdownMenuSub> */}
-                  </DropdownMenuGroup>
-                  {/* Appearance options 🔼 */}
-                  <DropdownMenuSeparator />
-                  {/* Last options 🔽 */}
-                  <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                      <a
-                        href="https://github.com/MrRedu/generic-projects/tree/main/42"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Source code"
-                        className="flex items-center gap-2"
-                      >
-                        GitHub
-                      </a>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem disabled>Support</DropdownMenuItem>
-                  </DropdownMenuGroup>
-                  {/* Last options 🔼 */}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </AlertDialog>
+                </DropdownMenuGroup>
+                {/* Appearance options 🔼 */}
+                <DropdownMenuSeparator />
+                {/* Last options 🔽 */}
+                <DropdownMenuGroup>
+                  <DropdownMenuItem>
+                    <a
+                      href="https://github.com/MrRedu/generic-projects/tree/main/42"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Source code"
+                      className="flex items-center gap-2"
+                    >
+                      GitHub
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem disabled>Support</DropdownMenuItem>
+                </DropdownMenuGroup>
+                {/* Last options 🔼 */}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </header>
